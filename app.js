@@ -17,6 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
 				color: "red",
 			},
 		},
+		tooltip: {
+			animation: false,
+			backgroundColor: "#333333",
+			borderColor: "red",
+			borderRadius: 20,
+			followPointer: true,
+			style: {
+				color: "#ffffff",
+			},
+		},
 		title: {
 			text: "My Fruits Chart",
 		},
