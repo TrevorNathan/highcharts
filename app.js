@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	Highcharts.chart("container", {
 		chart: {
 			type: "column",
+			zoomType: "x",
 		},
 		credits: {
 			//enabled: false,
