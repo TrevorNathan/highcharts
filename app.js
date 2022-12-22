@@ -69,11 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
 			// 		["Peter", 9],
 			// 	],
 			// },
+			/*
 			{
 				data: [
 					{ name: "Jack", y: 10, x: 2, color: "red" },
 					{ name: "Jane", y: 20, x: 4 },
 				],
+			},
+			*/
+			{
+				name: "Negative data",
+				negativeColor: "red",
+				data: [1, 2, 3, 6, -10, 8, 20, 2],
 			},
 		],
 	});
