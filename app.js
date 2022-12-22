@@ -56,11 +56,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		series: [
 			{
 				name: "John",
-				data: [1, 2, 3],
+				data: [1, 10, 20, 40, 2],
 			},
 			{
 				name: "Jane",
 				data: [2, 4, 8],
+			},
+			// {
+			// 	data: [
+			// 		["Jane", 10],
+			// 		["Jack", 10],
+			// 		["Peter", 9],
+			// 	],
+			// },
+			{
+				data: [
+					{ name: "Jack", y: 10, x: 2, color: "red" },
+					{ name: "Jane", y: 20, x: 4 },
+				],
 			},
 		],
 	});
