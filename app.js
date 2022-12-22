@@ -21,18 +21,29 @@ document.addEventListener("DOMContentLoaded", () => {
 				color: "red",
 			},
 		},
+		// tooltip: {
+		// 	animation: false,
+		// 	backgroundColor: "#333333",
+		// 	borderColor: "red",
+		// 	borderRadius: 20,
+		// 	followPointer: true,
+		// 	style: {
+		// 		color: "#ffffff",
+		// 	},
+		// 	formatter() {
+		// 		return `<strong>X value</strong> - ${this.x}. <em>Y value - ${this.y}`;
+		// 	},
+		// },
 		tooltip: {
-			animation: false,
-			backgroundColor: "#333333",
-			borderColor: "red",
-			borderRadius: 20,
-			followPointer: true,
-			style: {
-				color: "#ffffff",
-			},
 			formatter() {
-				return `<strong>X value</strong> - ${this.x}. <em>Y value - ${this.y}`;
+				let s = `<strong>X is: </strong> ${this.x}`;
+				console.log(this);
+				this.points.forEach(function (point) {
+					s += `<br>Y is: ${point.y} - ${point.series.name}`;
+				});
+				return s;
 			},
+			shared: true,
 		},
 		yAxis: {
 			title: {
