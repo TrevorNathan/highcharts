@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 			style: {
 				color: "#ffffff",
 			},
+			formatter() {
+				return `<strong>X value</strong> - ${this.x}. <em>Y value - ${this.y}`;
+			},
 		},
 		yAxis: {
 			title: {
