@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 	Highcharts.chart("container", {
 		chart: {
-			type: "column",
+			type: "bar",
 			zoomType: "x",
 		},
 		title: {
@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			alternateGridColor: "#F5F5F5",
 		},
 		series: [
+			/*
 			{
 				name: "John",
 				data: [1, 10, 20, 40, 2],
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				name: "Jane",
 				data: [2, 4, 8],
 			},
+			*/
 			// {
 			// 	data: [
 			// 		["Jane", 10],
@@ -80,10 +82,27 @@ document.addEventListener("DOMContentLoaded", () => {
 				],
 			},
 			*/
+			// {
+			// 	name: "Negative data",
+			// 	negativeColor: "red",
+			// 	data: [1, 2, 3, 6, -10, 8, 20, 2],
+			// },
 			{
-				name: "Negative data",
-				negativeColor: "red",
-				data: [1, 2, 3, 6, -10, 8, 20, 2],
+				name: "Different colors",
+				data: [-4, -8, 0, 4, 5, 6, 9, 10, 12, 15, 10, 9, 7, -4],
+				zones: [
+					{
+						value: 0,
+						color: "#f7a35c",
+					},
+					{
+						value: 10,
+						color: "#7cb5ec",
+					},
+					{
+						color: "#90ed7d",
+					},
+				],
 			},
 		],
 	});
