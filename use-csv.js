@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			rules: [
 				{
 					condition: {
-						maxWidth: 500,
+						maxWidth: 500, //minHeight minWidth maxHeight
 						callback() {
 							return false;
 						},
