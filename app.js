@@ -21,19 +21,20 @@ document.addEventListener("DOMContentLoaded", () => {
 				color: "red",
 			},
 		},
-		// tooltip: {
-		// 	animation: false,
-		// 	backgroundColor: "#333333",
-		// 	borderColor: "red",
-		// 	borderRadius: 20,
-		// 	followPointer: true,
-		// 	style: {
-		// 		color: "#ffffff",
-		// 	},
-		// 	formatter() {
-		// 		return `<strong>X value</strong> - ${this.x}. <em>Y value - ${this.y}`;
-		// 	},
-		// },
+		tooltip: {
+			animation: false,
+			backgroundColor: "#333333",
+			borderColor: "red",
+			borderRadius: 20,
+			followPointer: true,
+			style: {
+				color: "#ffffff",
+			},
+			formatter() {
+				return `<strong>X value</strong> - ${this.x}. <em>Y value - ${this.y}`;
+			},
+		},
+		/*
 		tooltip: {
 			formatter() {
 				let s = `<strong>X is: </strong> ${this.x}`;
@@ -45,6 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			},
 			shared: true,
 		},
+		*/
 		yAxis: {
 			title: {
 				text: "Fruits Eaten",
@@ -52,6 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		},
 		xAxis: {
 			categories: ["Apples", "Bananas", "Oranges"],
+			alternateGridColor: "#F5F5F5",
 		},
 		series: [
 			{
