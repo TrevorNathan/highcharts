@@ -12,6 +12,22 @@ document.addEventListener("DOMContentLoaded", () => {
 				text: "Fruits Eaten",
 			},
 		},
+		responsive: {
+			rules: [
+				{
+					condition: {
+						maxWidth: 500,
+						callback() {
+							return false;
+						},
+					},
+					chartOptions: {
+						legend: { enabled: false },
+						yAxis: { title: { text: "" } },
+					},
+				},
+			],
+		},
 	};
 
 	// Get data from csv file
