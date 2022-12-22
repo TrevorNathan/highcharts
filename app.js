@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", () => {
 			type: "column",
 			zoomType: "x",
 		},
+		title: {
+			text: "My Fruits Chart",
+		},
+		colors: ["#E9B44C", "#9B2915", "#50A2A7", "#1C110A", "#E4D6A7"],
 		credits: {
 			//enabled: false,
 			text: "My custom credit",
@@ -26,9 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			style: {
 				color: "#ffffff",
 			},
-		},
-		title: {
-			text: "My Fruits Chart",
 		},
 		yAxis: {
 			title: {
